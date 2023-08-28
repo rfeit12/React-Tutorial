@@ -2,10 +2,21 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  const name = 'Renan';
+
+  function sum(a, b) {
+    return a + b;
+  }
+
+  const url ='https://via.placeholder.com/150'
+
   return (
-    <div className="App">
-      <h1>Olá!</h1>
+    <div className="App"> 
+      <h1>Olá, {name}!</h1>
       <p>Teste react</p>
+      <p>Soma: {sum(1,2)}</p>
+      <img src={url} alt="Minha imagem" />
     </div>
   );
 }
